@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.container{
+    width: 100vw;
+    margin: 0 auto;
+    padding:0 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('/img/background.jpg') no-repeat center center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.logo{
+    width: 100%;
+    max-width: 10rem;
+}
+
+.logo img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.img-logo:hover{
+    border-color: black;
+}
+
+.img-logo{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.desc {
+    text-align: center;
+    color: white;
+    margin:10px 0;
+}
+
+.desc h1{
+    font-weight: normal;
+    text-shadow: 1px 1px 20px #000, -1px 1px 20px #000, 1px -1px 20px #000, -1px -1px 20px #000;
+}
+
+.desc h3{
+    padding: 1rem 0;
+    margin: 0.3rem 0;
+    word-wrap: break-word;
+    color: #dfdfdf;
+    text-shadow: 1px 1px 2px #000, -1px 1px 2px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
+
+.links{
+    width: 100%;
+    text-align: center;
+}
+
+.links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.links .link-a:hover{
+    background: rgb(17, 232, 74);
+    color: #000000;
+}
+
+.links .link-a{
+    position: relative;
+    border-radius: 7px;
+    border:2px solid white;
+    padding: 0.5rem;
+    margin: 1rem;
+    transition: 0.3s;
+    background: white;
+}
+
+.links .link-a i{
+    position: absolute;
+    left: 20px;
+    line-height: 1;
+    font-size: 23px;
+}
+
+.links .link-a h3{
+    font-weight: normal;
+}
+
+.links .link-a img{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    position: absolute;
+    left: 20px;
+}
+
+    .link2{
+        margin-top:10px;
+    }
+
+    .link2 i:hover{
+        transform: scale(1.3);
+    }
+
+    .link2 i{transition: 0.3s;}
+
+    .link2 a{
+        color: #0f5cb3;
+        font-size: 25px;
+        margin:0 5px;
+    }
+
+/*********************
+  Media Query Classes
+**********************/
+@media screen and (min-width: 0px) {
+  .links .link-a h3 {
+    padding: 0rem 3rem;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .links .link-a h3 {
+      padding: 0rem 3rem;
+  }
+}
+
+@media (min-width: 900px), (min-width: 940px) {
+    .container {
+    min-height: 100vh;
+    }
+
+    .desc h3{
+    padding: 1rem 2.5rem;
+    margin: 0.3rem 15rem;
+  }
+
+  .links .link-a{
+    margin: 1rem 15rem;
+}
+}
+
+@media (min-width: 100px){
+    .container{
+        min-height: 100vh;
+    }
+}
+
